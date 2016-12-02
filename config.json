@@ -1,0 +1,24 @@
+{
+    "dev": {
+        "auth": {
+            "issuer": "http://localhost:3000/",
+            "entryPoint": "https://dev-467749.oktapreview.com/app/oyecodedev970378_roomfinder_1/exk8x3ahm3ycfQYCI0h7/sso/saml",
+            "cert": ""
+        }
+    },
+    "qa": {
+        "auth": {
+            "issuer": "http://qaroomfinder.herokuapp.com/",
+            "entryPoint": "http://qaentrypoint.com/sso/saml",
+            "cert": ""
+        }
+    },
+    "production": {
+        "auth": {
+            "issuer": "http://isiroomfinder.herokuapp.com/",
+            "entryPoint": "http://productionentrypoint.com/sso/saml",
+            "cert": ""
+        }
+    }
+
+}

@@ -1,0 +1,28 @@
+{
+    "name": "Okta-SAML-Node",
+    "description": "Application demonstrating OKTA SSO integration for Node application",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "test": "NODE_ENV=production node index.js"
+    },
+    "dependencies": {
+        "connect": "^2.30.2",
+        "express": "^3.5.3",
+        "passport": "^0.2.2",
+        "passport-saml": "0.15.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mailtoharshit/okta-saml-node.git"
+    },
+    "contributors": [{
+        "name": "Harshit Pandey",
+        "email": "mailtoharshit@gmail.com"
+    }],
+    "keywords": [
+        "saml",
+        "sso"
+    ],
+    "license": "MIT"
+}
