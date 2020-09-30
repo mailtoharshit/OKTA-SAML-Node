@@ -1,18 +1,22 @@
 var express = require('express');
 var connect = require('connect');
+var cookie = require('cookie-parser');
+var bodyParser = require('body-parser');
+var session = require('express-session')
 var auth = require('./auth');
 var app = express();
 var path = require('path');
 
-app.configure(function() {
-    app.use(express.logger());
-    app.use(connect.compress());
-    app.use(express.cookieParser());
-    app.use(express.bodyParser());
-    app.use(express.session({ secret: "roomapplication session" }));
+// app.configure(function() {
+//     app.use(express.logger());
+//     app.use(connect.compress());
+    app.use(cookie());
+    app.use(bodyParser());
+    app.use(session({ secret: "roomapplication session" }));
     app.use(auth.initialize());
     app.use(auth.session());
-});
+    app.use(express.static('public'));
+//});
 
 //Get Methods
 app.get('/', auth.protected, function(req, res) {
