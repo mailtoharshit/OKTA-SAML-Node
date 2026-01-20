@@ -16,7 +16,7 @@
         "express": "^4.7.1",
         "express-session": "^1.17.1",
         "passport": "^0.2.2",
-        "passport-saml": "0.15.0",
+        "passport-saml": "3.2.4",
         "serverless-http": "^2.6.0"
     },
     "repository": {
